@@ -1,0 +1,27 @@
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(2, 4, 1, 0),
+    prodvers=(2, 4, 1, 0),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+  ),
+  kids=[
+    StringFileInfo([
+      StringTable('080404B0', [
+        StringStruct('CompanyName', '林发龙'),
+        StringStruct('FileDescription', '红警地图管理器 - FA2风格统一编辑器/AI助手多连接与自动兜底/跨平台地图导入/取消迷雾/地图绘制/属性编辑/游戏模式管理/地图包分发/中文参数帮助/环境自检/真实地形画布/可拖动分栏/右键平移/参数定位/触发动作中文下拉/地图坏字节头尾体检/名称特征多选筛选(所见即所得修正)/右键定位文件'),
+        StringStruct('FileVersion', '2.4.1.0'),
+        StringStruct('InternalName', 'RA2MapManager'),
+        StringStruct('OriginalFilename', '红警地图管理器.exe'),
+        StringStruct('ProductName', '红警地图管理器'),
+        StringStruct('ProductVersion', '2.4.1.0'),
+        StringStruct('LegalCopyright', '仅供个人游戏使用')
+      ])
+    ]),
+    VarFileInfo([VarStruct('Translation', [2052, 1200])])
+  ]
+)

@@ -1,0 +1,58 @@
+# -*- mode: python ; coding: utf-8 -*-
+
+
+a = Analysis(
+    ['ra2map.py'],
+    pathex=[],
+    binaries=[],
+    datas=[('web', 'web')],
+    hiddenimports=[
+        'native_win',
+        'ini_edit',
+        'mapio',
+        'mapgen',
+        'mapedit',
+        'overlay_catalog',
+        'modereg',
+        'mapfog',
+        'ai_proxy',
+        'platform_import',
+        'trigger_defs',
+        'webview',
+        'webview.platforms.winforms',
+        'webview.platforms.edgechromium',
+        'clr_loader',
+        'clr_loader.netfx',
+        'pythonnet',
+    ],
+    hookspath=[],
+    hooksconfig={},
+    runtime_hooks=[],
+    excludes=['numpy', 'pandas', 'matplotlib', 'unittest', 'pydoc', 'tkinter'],
+    noarchive=False,
+    optimize=0,
+)
+pyz = PYZ(a.pure)
+
+exe = EXE(
+    pyz,
+    a.scripts,
+    a.binaries,
+    a.datas,
+    [],
+    name='红警地图管理器',
+    debug=False,
+    bootloader_ignore_signals=False,
+    strip=False,
+    upx=True,
+    upx_exclude=[],
+    runtime_tmpdir=None,
+    console=False,
+    disable_windowed_traceback=False,
+    argv_emulation=False,
+    target_arch=None,
+    codesign_identity=None,
+    entitlements_file=None,
+    version='version_info.txt',
+    icon=['app.ico'],
+)

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 先看常见问题
+    url: https://github.com/smblong/ra2-map-manager/blob/main/docs/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md
+    about: 启动失败、没预览、找不到地图、杀软误报等先查这里
+  - name: 版本更新记录
+    url: https://github.com/smblong/ra2-map-manager/blob/main/CHANGELOG.md
+    about: 想确认某功能是哪一版加的、某个 bug 何时修的
