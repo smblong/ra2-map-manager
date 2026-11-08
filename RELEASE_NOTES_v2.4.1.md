@@ -5,7 +5,7 @@
 ## 下载
 
 - 百度网盘：<https://pan.baidu.com/s/1BV8eli3-T1HvKi8DK0Zteg?pwd=bg24>（提取码 `bg24`，目录级分享，内含「历史版本」文件夹）
-- 本 Release 附件：`红警地图管理器_v2.4.1.zip`
+- 本 Release 附件：`RA2-Map-Manager_v2.4.1.zip`（GitHub 附件名用 ASCII，内容与本地完整包 `红警地图管理器_v2.4.1.zip` 完全一致，校验值见下）
 
 解压 → 双击 `红警地图管理器.exe` → 首次启动选游戏目录即可。Win10/11 一般自带 WebView2；顶栏「环境自检」可核对。
 
