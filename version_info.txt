@@ -12,7 +12,7 @@ VSVersionInfo(
   kids=[
     StringFileInfo([
       StringTable('080404B0', [
-        StringStruct('CompanyName', '林发龙'),
+        StringStruct('CompanyName', 'smblong'),
         StringStruct('FileDescription', '红警地图管理器 - FA2风格统一编辑器/AI助手多连接与自动兜底/跨平台地图导入/取消迷雾/地图绘制/属性编辑/游戏模式管理/地图包分发/中文参数帮助/环境自检/真实地形画布/可拖动分栏/右键平移/参数定位/触发动作中文下拉/地图坏字节头尾体检/名称特征多选筛选(所见即所得修正)/右键定位文件'),
         StringStruct('FileVersion', '2.4.1.0'),
         StringStruct('InternalName', 'RA2MapManager'),

@@ -24,7 +24,9 @@ import platform_import as PI  # noqa: E402
 
 PORT = 8964
 BASE = 'http://127.0.0.1:%d' % PORT
-HT = r'E:\game\HTPlatform'
+# 平台扫描用例：用环境变量 RA2_PLATFORM_DIR 指定自己的平台安装目录；
+# 未设置时用用户目录下的通用默认值，避免把维护者本地路径写进仓库。
+HT = os.environ.get('RA2_PLATFORM_DIR') or os.path.join(os.path.expanduser('~'), 'HTPlatform')
 OUT = []
 TMP = None
 

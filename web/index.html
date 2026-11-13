@@ -1119,7 +1119,7 @@ body.wb-open .editor .eh>.addpop.on{display:flex}
     </div>
     <div id="dirList"></div>
     <div class="row" style="margin-top:14px"><label>手动输入</label>
-      <input id="dirManual" placeholder="例如 E:\game\ra2">
+      <input id="dirManual" placeholder="例如 <游戏目录>">
     </div>
   </div>
   <div class="mf">
@@ -1186,7 +1186,7 @@ body.wb-open .editor .eh>.addpop.on{display:flex}
   <div class="mh">导入其他平台地图 <span style="font-weight:400;color:#8b95a4;font-size:12px">HT / RA2OL · MP.dat · .ra2mp · 解包缓存</span></div>
   <div class="mb">
     <div class="opt-row">
-      <input type="text" id="pfRoot" placeholder="平台安装目录，例如 E:\game\HTPlatform" style="flex:1;height:30px;border-radius:7px;border:1px solid var(--line);background:#0b1017;color:#dbe3ec;padding:0 8px;font-size:12px">
+      <input type="text" id="pfRoot" placeholder="平台安装目录，例如 <平台安装目录>" style="flex:1;height:30px;border-radius:7px;border:1px solid var(--line);background:#0b1017;color:#dbe3ec;padding:0 8px;font-size:12px">
       <button class="btn primary" id="pfScan">扫描目录</button>
       <button class="btn" data-ai="platform">AI 助手</button>
     </div>
@@ -1220,7 +1220,7 @@ body.wb-open .editor .eh>.addpop.on{display:flex}
 
 <!-- v2.4 AI 助手配置：多连接 / 获取模型 / 勾选模型 -->
 <div class="modal wide" id="mAiCfg">
-  <div class="mh">AI 助手配置 <span style="font-weight:400;color:#8b95a4;font-size:12px">密钥只保存在本机，不写日志、不回显明文</span></div>
+  <div class="mh">AI 助手配置 <span style="font-weight:400;color:#8b95a4;font-size:12px">密钥只保存在本地，不写日志、不回显明文</span></div>
   <div class="mb">
     <div class="opt-row">
       <button class="btn primary mini-btn" id="aicAdd">+ 添加连接</button>
@@ -4287,7 +4287,7 @@ async function aicSave() {
     aiFillModelSel(); aicRender();
     $('#aicStat').textContent = r.ready ? '已保存，配置就绪' : '已保存，但还没有可用模型';
     $('#aiCfgStat').textContent = r.ready ? `已就绪 · ${r.connections.length} 条连接 / ${(r.options || []).length} 个可用模型` : '尚未配置好可用模型';
-    toast('AI 助手配置已保存到本机');
+    toast('AI 助手配置已保存到本地');
   } catch (e) { toast('保存失败：' + e.message, { err: true }); }
 }
 $('#btnAiCfg').onclick = aicOpen;
