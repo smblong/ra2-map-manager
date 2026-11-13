@@ -2,7 +2,7 @@
 """地图「取消迷雾 / 全图可见」。
 
 机制（实证，不是猜的）：
-  * 玩家社区标准做法（本机 XKD2022.mpr 就是现成模板）：
+  * 玩家社区标准做法（XKD2022.mpr 就是现成模板）：
       [Triggers] <ID>=Americans,<none>,RA2MAP_RevealAll,0,1,1,1,0
       [Events]   <ID>=1,13,0,<delay>        # 13 = 流逝时间
       [Actions]  <ID>=1,16,0,0,0,0,0,0,A   # 16 = Reveal all map
@@ -10,10 +10,10 @@
     Action 16 出自 ModEnc《Actions (maps)/RA2YR/000 049》，官方说明
     "Reveals the entire map to the player. May cause reconnection error in multiplayer!"。
   * [Basic] FreeRadar=yes：不用造雷达就有小地图（FA2 StdMapRA2.ini 标准字段）。
-  * [SpecialFlags] FogOfWar=no：战争迷雾（半透明灰雾），本机 629 张图默认都是 no。
+  * [SpecialFlags] FogOfWar=no：战争迷雾（半透明灰雾），629 张样本图默认都是 no。
 
 读写复用 ini_edit.MapIni（已在 629 张真实地图上验证）：按 \\n 保序切行，
-兼容本机地图里普遍存在的 UTF-16 BOM、CRLF/LF/CR 混合行尾、GBK 段名，
+兼容本地地图里普遍存在的 UTF-16 BOM、CRLF/LF/CR 混合行尾、GBK 段名，
 只改文本段，二进制段（IsoMapPack5 / OverlayPack / PreviewPack）原样保留。
 """
 import json

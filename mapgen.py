@@ -21,7 +21,7 @@ THEATER_CN = {'TEMPERATE': '温带', 'SNOW': '雪地', 'URBAN': '城市',
 
 # ---------------- overlay ID（随游戏环境变化，见 overlay_catalog） ----------------
 # 矿/宝石的真实编号来自 rules(md).ini 的 [OverlayTypes]（1-based）：
-#   本机「重聚」环境：矿 = TIB01..TIB20 = 105..124；宝石 = GEM01..GEM12 = 28..39
+#   测试整合版环境：矿 = TIB01..TIB20 = 105..124；宝石 = GEM01..GEM12 = 28..39
 #   原版 YR：矿 = 102..121；宝石 = 27..38
 ORE_IDS = list(range(102, 122))
 GEM_IDS = list(range(27, 39))
